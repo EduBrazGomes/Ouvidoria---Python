@@ -1,0 +1,13 @@
+REATE TABLE IF NOT EXISTS manifestacoes (
+codigo int auto_increment,
+manifestacao varchar(500),
+
+primary key(codigo)
+);
+
+insert into manifestacoes(manifestacao)
+values("Todos os banheiros estão sujos");
+
+select * from manifestacoes;
+
+
