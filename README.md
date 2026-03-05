@@ -31,3 +31,17 @@ O sistema opera através de um menu interativo com as seguintes operações:
 
 📌 Remoção de Manifestação: Exclui registros utilizando o código de identificação.
 
+📋 Estrutura de Dados (SQL Real)
+Para que o sistema funcione corretamente com o código que você desenvolvido, a tabela no MySQL deve seguir exatamente este padrão técnico:
+
+-- Criação da tabela conforme o script original 
+CREATE TABLE IF NOT EXISTS manifestacoes (
+    codigo INT AUTO_INCREMENT,        -- Identificador único gerado automaticamente 
+    manifestacao VARCHAR(500),        -- Texto descritivo da ocorrência 
+    PRIMARY KEY(codigo)               -- Define o código como chave primária 
+);
+
+-- Exemplo de inserção inicial para teste 
+INSERT INTO manifestacoes(manifestacao) 
+VALUES("Todos os banheiros estão sujos"); 
+
